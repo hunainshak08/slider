@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*   Container1    Start */
+        .container {
+            width: 100%;
+            height: 620px;
+            display: flex;
+            justify-content: center;
+            column-gap: 20px;
+            flex-wrap: wrap;
+        }
+        #box1 {
+            background-color: yellow;
+        }
+        #box2 {
+            background-color: rgb(226, 0, 49);
+        }
+        #box3 {
+            background-color: rgb(42, 240, 16);
+        }
+        #box4 {
+            background-color: rgb(223, 11, 11);
+        }
+        #box5 {
+            background-color: blue;
+        }
+        #box6 {
+            background-color: green;
+        }
+        #box7 {
+            background-color: rgb(255, 94, 0);
+        }
+        #box8 {
+            background-color: purple;
+        }
+
+        #box1 h1 {
+            color: black;
+        }
+        .box {
+            width: 290px;
+            height: 400px;
+            box-shadow: 0px 0px 7px 3px black;
+            border-radius: 8px;
+            margin: 15px 0px;
+            
+        }
+        .box:hover {
+            transform: rotate(0.5deg);
+            cursor: pointer;
+        }
+        .box-cont {
+            width: 100%;
+            height: 350px;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 8px 8px 0px 0px;   
+        }
+        .box img {
+            height: 200px;
+            width: 100%;
+            border-radius: 8px 8px 0px 0px;
+        }
+       
+        .box-bottom {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+        h1 , h3 {
+            color: white;
+            font-weight: 800;
+        }
+        p {
+            font-size: 19px;
+            font-weight: 600;
+        }
+        button {
+            padding: 10px 15px ;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 800;
+
+        }
+        button:hover {
+            background-color: white;
+            color: black;
+            font-weight: 800;
+
+        }
+       
+        /*   Container1    Start */
+    </style>
+</head>
+<body>
+    <!--Container1 Start-->
+    <div class="container">
+                    
+        <div class="box" id="box1">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg26.jpg" id="img1"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box2"> 
+                    <div class="box-cont">
+                              <img src="bg27.jpg">
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p2">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box3"> 
+            <div class="box-cont">
+            <img src="bg24.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box4">
+             <div class="box-cont">
+                <img src="bg23.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+                    
+        <div class="box" id="box5">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg17.jpg"img1"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box6"> 
+            <div class="box-cont">
+            <img src="bg2.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p2">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box7"> 
+            <div class="box-cont">
+            <img src="bg3.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box8">
+             <div class="box-cont">
+                <img src="bg9.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+  
+        <div class="box" id="box1">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg6.jpg" id="img1"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box2"> 
+                    <div class="box-cont">
+                              <img src="bg7.jpg">
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p2">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box3"> 
+            <div class="box-cont">
+            <img src="bg28.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box4">
+             <div class="box-cont">
+                <img src="bg10.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+   
+                    
+        <div class="box" id="box5">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg1.jpg"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box6"> 
+            <div class="box-cont">
+            <img src="bg4.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p2">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box7"> 
+            <div class="box-cont">
+            <img src="bg25.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box8">
+             <div class="box-cont">
+                <img src="bg11.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+   
+         
+        <div class="box" id="box1">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg12.jpg" id="img1"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box2"> 
+                    <div class="box-cont">
+                              <img src="bg13.jpg">
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p2">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box3"> 
+            <div class="box-cont">
+            <img src="bg14.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box4">
+             <div class="box-cont">
+                <img src="bg15.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">CBuy Now</button>
+        </div></div>
+
+                    
+        <div class="box" id="box5">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg16.jpg"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box6"> 
+            <div class="box-cont">
+            <img src="bg18.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p2">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box7"> 
+            <div class="box-cont">
+            <img src="bg19.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box8">
+             <div class="box-cont">
+                <img src="bg20.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+  
+                    
+        <div class="box" id="box5">
+                    <div class="box-cont"  id="box-cont">
+                              <img src="bg21.jpg"> 
+                              <h1>Nike X OFF- White</h1>
+                              <p id="p1">The 10: Air Jordan 1 off white - change</p>
+                              <h3>$999</h3>
+                    </div>
+                    <div class="box-bottom">
+                        <button id="btn1" onclick="change1()">Buy Now</button>
+                    </div>
+        </div>
+        <div class="box" id="box6"> 
+            <div class="box-cont">
+            <img src="bg22.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p2">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn2" onclick="change2()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box7"> 
+            <div class="box-cont">
+            <img src="bg25.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p>The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn3" onclick="change3()">Buy Now</button>
+        </div></div>
+        <div class="box" id="box8">
+             <div class="box-cont">
+                <img src="bg28.jpg">
+            <h1>Nike X OFF- White</h1>
+            <p id="p4">The 10: Air Jordan 1 off white - change</p>
+            <h3>$999</h3>
+        </div>
+        <div class="box-bottom">
+            <button id="btn4" onclick="change4()">Buy Now</button>
+        </div></div>
+    </div>
+    
+    <!--Container7 End-->
+   
+    <script>
+        function change1(){
+            document.getElementById("box1").style.backgroundColor = "blue";
+            document.getElementById("box1").style.boxShadow = "10px 10px 8px black";
+            document.getElementById("box-cont").style.color = "white";
+           
+            
+        }
+        function change2(){
+            document.getElementById("box2").style.backgroundColor = "green";
+            document.getElementById("box2").style.boxShadow = "10px 10px 8px black";
+            document.getElementById("p2").style.color = "white";
+            
+        }
+        function change3(){
+            document.getElementById("box3").style.backgroundColor = "rgb(255, 94, 0)";
+            document.getElementById("box3").style.boxShadow = "10px 10px 8px black";
+
+            
+        }
+        function change4(){
+            document.getElementById("box4").style.backgroundColor = "purple";
+            document.getElementById("box4").style.boxShadow = "10px 10px 8px black";
+             document.getElementById("p4").style.color = "white";
+        }
+       
+    
+        
+
+
+
+
+
+    </script>
+</body>
+</html>
